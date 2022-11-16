@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Todo List</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Login Page User -->
+    <div class="users">
+        <div class="loginForm">
+            <form>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="number" id="id" placeholder="Id" required>
+                <input type="text" id="gmail" placeholder="Gmail" required>
+                <button type="button" id="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--End Login Page User -->
+
+
+    <!-- Page ToDo List -->
+    
+    <div class="container">
+        <div class="Todo">
+            <div class="header">
+                <h1>List Users</h1>
+                <div class="listUser">
+                    <div class="user">
+                        <img src="user photo.jpeg" alt="photo">
+                        <h1>First Name</h1>
+                    </div>
+                </div>
+
+                <form id="new-task-form">
+                    <input type="text" name="new-task-input" id="new-task-input"
+                        placeholder="What do you have planned?" />
+                    <input type="submit" id="new-task-submit" value="Add New" />
+                </form>
+            </div>
+            <main>
+                <section class="task-list">
+                    <h2>New Tasks</h2>
+                    <div class="newList"></div>
+
+                    <h2>Old Tasks</h2>
+
+                    <div id="tasks">
+
+                        <!--
+                                <div class="task"> 
+                                    <div class="content">
+                                        <p></p>
+                                        <span></span>
+                                        <span class='completed'></span>
+                                    </div>
+                                </div>
+                            -->
+
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- End Page ToDo List -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
